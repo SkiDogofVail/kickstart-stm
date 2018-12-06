@@ -1,0 +1,34 @@
+{
+  "name": "kickstart-stm",
+  "version": "1.0.0",
+  "description": "This is an API application for all approvers to vote on distribution of loan escrow funds",
+  "main": "index.js",
+  "engines": {
+    "node": "10.11.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "dev": "node server.js",
+    "prestart": "node compile.js",
+    "start": "next build",
+    "poststart": "node server.js"
+  },
+  "author": "Scott T Mathis, CPA, CISA & CISSP - CISO RBC Bank US",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.0",
+    "ganache-cli": "^6.1.8",
+    "mocha": "^5.2.0",
+    "next": "^4.1.4",
+    "next-routes": "^1.4.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0",
+    "solc": "^0.4.25",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.0.0-beta.35"
+  }
+}
